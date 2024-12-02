@@ -1,0 +1,50 @@
+
+
+.message-cont{
+    background-color: #bacaf3;
+    color: #4C6292;
+    border-radius: 25px;
+    height: 4vh;
+    width: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+    font-size: 13px;
+}
+.message-main-cont{
+    color: #0F1729;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    width: 9vw;
+    padding: 1%;
+    
+    border-radius: 10px;
+   
+
+
+    margin-left: 1%;
+}
+.message-main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    
+}
+.message-blue{
+    background-color: #0F8BFD;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.arrowing{
+    height: 6vh;
+}

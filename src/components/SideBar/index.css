@@ -1,0 +1,35 @@
+.side-bg{
+    background-color: #0D1424;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 15px;
+    width:17vw;
+    padding-bottom: 3%;
+    
+
+}
+.side-icons-cont{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-bottom: 8%;
+
+}
+.side-icon{
+    height: 2vh;
+    width: 2vw;
+    display: inline-block;
+    margin-right: 5%;
+
+}
+.side-img-cont{
+   margin-top: 7%;
+   margin-bottom: 9%;
+   align-self: center;
+   
+}
+.side-main-cont{
+    padding-left: 5%;
+}
