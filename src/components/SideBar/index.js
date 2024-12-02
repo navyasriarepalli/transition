@@ -5,6 +5,8 @@ import { SlWrench } from "react-icons/sl";
 import { PiNetworkBold } from "react-icons/pi";
 import { HiLink } from "react-icons/hi";
 import { FaChevronRight } from "react-icons/fa6";
+
+import { AiOutlineAudit } from "react-icons/ai";
 import './index.css'
 
 class SideBar extends Component{
@@ -19,7 +21,7 @@ class SideBar extends Component{
                 </div>
                 <div className='side-main-cont'>
                     <div className='side-icons-cont'>
-                    <PiNetworkBold className='side-icon' />
+                    <AiOutlineAudit  className='side-icon' />
                         <span>Internal Audit</span>
                         <FaChevronRight className='side-icon'  />
                     </div>

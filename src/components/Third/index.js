@@ -2,6 +2,12 @@ import {Component} from 'react'
 import { RiCloseLine } from "react-icons/ri";
 import { BsThreeDots } from "react-icons/bs";
 import { MdSend } from "react-icons/md";
+import { LuPlusCircle } from "react-icons/lu";
+import { IoPricetagOutline } from "react-icons/io5";
+import { MdPhotoCameraBack } from "react-icons/md";
+import { MdOutlineSearch } from "react-icons/md";
+import { BsCopy } from "react-icons/bs";
+import { MdOutlineRemoveRedEye } from "react-icons/md";
 
 import { MdOutlineLocalPostOffice } from "react-icons/md";
 import './index.css'
@@ -120,7 +126,7 @@ class Third extends Component{
 
                 <div className='mid-cont'>
                     <div className='mid-top-cont'>
-                        <p>Conversation</p>
+                        <p >Conversation</p>
                         <div className='mid-close'>
                             <span>Address update</span>
                             <RiCloseLine />
@@ -132,14 +138,15 @@ class Third extends Component{
                         <p>Rate</p>
                         <button className='mid-btn'>Escalate</button>
                     </div>
+                    <hr />
 
-                    <div>
-                        <div>
-                            <p>Conversation</p>
+                    <div className='last-white-cont'>
+                        <div className='mid-cover'>
+                            <p className='mid-underline'>Conversation</p>
                             <p>Attachment</p>
                         </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.Et tincidunt odio vivamus ac <br /> aliquam.Placerat maecenas quis ut elementum praesent imperdiet.</p>
+                        <div className='last-last-cont mid-message'>
+                            <p>Lorem ipsum dolor sit amet consectetur.Et tincidunt odio vivamus ac  aliquam.Placerat maecenas quis ut elementum praesent imperdiet.</p>
                         </div>
                         <div>
                             <div className='mid-time-details'>
@@ -155,8 +162,8 @@ class Third extends Component{
                                 </div>
                                 
                             </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur.Et tincidunt odio vivamus ac <br /> aliquam.Placerat maecenas quis ut elementum praesent imperdiet.<br />Egestas mattis pellentesque nibhi dui sed malesuada dolor eget ipsum. <br /> Molestie nam morbi id arcu volutpat arcu.</p>
+                            <div  className='last-last-cont mid-message'>
+                                <p>Lorem ipsum dolor sit amet consectetur.Et tincidunt odio vivamus ac aliquam.Placerat maecenas quis ut elementum praesent imperdiet.Egestas mattis pellentesque nibhi dui sed malesuada dolor eget ipsum.  Molestie nam morbi id arcu volutpat arcu.</p>
                             </div>
                         </div>
 
@@ -174,8 +181,8 @@ class Third extends Component{
                                 </div>
                                 
                             </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur.Et tincidunt odio vivamus ac <br /> aliquam.Placerat maecenas quis ut elementum praesent imperdiet.<br />Egestas mattis pellentesque nibhi dui sed malesuada dolor eget ipsum. <br /> Molestie nam morbi id arcu volutpat arcu.</p>
+                            <div className='last-last-cont mid-message'>
+                                <p>Lorem ipsum dolor sit amet consectetur.Et tincidunt odio vivamus ac aliquam.Placerat maecenas quis ut elementum praesent imperdiet.Egestas mattis pellentesque nibhi dui sed malesuada dolor eget ipsum. Molestie nam morbi id arcu volutpat arcu.</p>
                             </div>
                         </div>
 
@@ -195,42 +202,55 @@ class Third extends Component{
                         </div>
 
                         <div>
-                            <input type="text" className='mid-input-cont' placeholder='Type a message..'/>
-                            <button><MdSend /> Send</button>
+                            <input type="text" className='mid-input-cont mid-input' placeholder='Type a message..'/>
+                            <button className='last-one-btn'><MdSend /> Send</button>
                         </div>
                     </div>
 
                 </div>
-                <div>
-                    <div>
-                        <h1>Ask Captura</h1>
-                        <div>
-                        <MdOutlineLocalPostOffice />
-                        <span>Whatsapp</span>
+                <div className='last-cont'>
+                    <div className='last-white-cont'>
+                        <div className='last-first-cont last-white-cont'>
+                            <h1 className='last-head'>Ask Captura</h1>
+                            <div>
+                            <MdOutlineLocalPostOffice />
+                            <span>Whatsapp</span>
 
+                            </div>
+                            <div>
+                            <MdOutlineLocalPostOffice />
+                            <span>Greetings</span>
+                            </div>
                         </div>
+                        <hr />
                         <div>
-                        <MdOutlineLocalPostOffice />
-                        <span>Greetings</span>
+                            <div className='last-blur-cont'>
+                                <p>Greeting Template</p>
+                                <div className='last-bluring'>
+                                    <button className='last-blur-btn'><BsCopy />Copy to Send</button>
+                                    <button className='last-blur-btn'> <MdOutlineRemoveRedEye /> PreView</button>
+                                </div>
+                            </div>
+                            <div className='inputing'>
+                            
+                                <input type="text" className='mid-input-cont' placeholder='Type a message..'/>
+                                <button className='last-one-btn'><MdSend /></button>
+                            
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div className='last-blur-cont'>
-                            <p>ukdukfjhfjah</p>
-                        </div>
-                        <div>
-                        
-                            <input type="text" className='mid-input-cont' placeholder='Type a message..'/>
-                            <button className='last-one-btn'><MdSend /></button>
-                        
-                        </div>
-                    </div>
 
-                    <div>
+                    </div>
+                    
+
+                    <div className='last-white-cont'>
                         <h1>Action Launcher</h1>
-                        <input type="search" placeholder='search actions..'/>
+                        <div className='mid-input-cont last-input' >
+                            
+                            <span><MdOutlineSearch className="mid-search-cont"/>search actions..</span>
+                        </div>
+                        
                         <div className='last-btn-wrap-cont'>
-                            <button className='last-blue-color'>Add Action</button>
+                            <button className='last-blue-color'><LuPlusCircle />Add Action</button>
                             <button className='last-btn-element'>Fee Reversal</button>
                             <button className='last-btn-element'>Retail Onboarding</button>
                             <button className='last-btn-element'> Address Update</button>
@@ -238,18 +258,20 @@ class Third extends Component{
                     </div>
 
 
-                    <div>
+                    <div className='last-white-cont'>
                         <div>
-                            <span>Case Favorite</span>
+                        <IoPricetagOutline className='casing' />
+                            <span >Case Favorite</span>
 
                         </div>
-                        <div>
+                        <div className='last-last-cont'>
                             <p>Lorem ipsum dolor sit amet consectetur. Et tincidunt</p>
                         </div>
-                        <div>
+                        <div className='last-last-cont'>
+                        <MdPhotoCameraBack />
                             <span>Photo</span>
                         </div>
-                        <div>
+                        <div className='last-last-cont'>
                             <p>Lorem ipsum dolor sit amet consectetur. Et tincidunt</p>
                         </div>
                     </div>
